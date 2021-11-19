@@ -130,6 +130,7 @@ public class UserDaoJDBCImpl implements UserDao {
                 list.add(new User(rsst.getString(2),
                         rsst.getString(3), rsst.getByte(4)));
             }
+            connection.commit();
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
             try {
