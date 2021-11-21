@@ -13,7 +13,7 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void createUsersTable() {
-        Connection connection = Util.getConnection();
+        /*Connection connection = Util.getConnection();
         Statement stmt;
         try {
             connection.setAutoCommit(false);
@@ -37,11 +37,11 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
     public void dropUsersTable() {
-        Connection connection = Util.getConnection();
+        /*Connection connection = Util.getConnection();
         Statement stmt;
         try {
             connection.setAutoCommit(false);
@@ -61,12 +61,12 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
     }
 
     public void saveUser(String name, String lastName, byte age) {
-        Connection connection = Util.getConnection();
+        /*Connection connection = Util.getConnection();
         PreparedStatement prpstm;
         try {
             connection.setAutoCommit(false);
@@ -89,13 +89,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 
 
     }
 
     public void removeUserById(long id) {
-        Connection connection = Util.getConnection();
+        /*Connection connection = Util.getConnection();
         Statement stmt;
         try {
             connection.setAutoCommit(false);
@@ -115,11 +115,11 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
     public List<User> getAllUsers() {
-        List<User> list = new ArrayList<>();
+       /* List<User> list = new ArrayList<>();
         Connection connection = Util.getConnection();
         Statement stmt;
         try {
@@ -144,12 +144,13 @@ public class UserDaoJDBCImpl implements UserDao {
                 e.printStackTrace();
             }
         }
-        return list;
+        return list;*/
+        return null;
     }
     //ResultSet
 
     public void cleanUsersTable() {
-        Connection connection = Util.getConnection();
+        /*Connection connection = Util.getConnection();
         Statement stmt;
         try {
             connection.setAutoCommit(false);
@@ -169,6 +170,6 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 }
